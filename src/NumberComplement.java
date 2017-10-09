@@ -7,9 +7,10 @@ public class NumberComplement {
 	}
 
 	public int findComplement(int num) {
-		System.out.println(Integer.numberOfLeadingZeros(num));
-		System.out.println(Integer.toBinaryString(~num));
-		return (int)Long.parseLong(Integer.toBinaryString(~num),2);       
+		String binary = Integer.toBinaryString(num);
+		String complement = Integer.toBinaryString(~num);
+		complement = complement.substring(complement.length()-binary.length());
+		return Integer.parseInt(complement,2);       
     }
 	
 	byte convertDecimalToBinary(int num){
