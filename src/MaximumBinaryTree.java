@@ -25,6 +25,7 @@ public class MaximumBinaryTree {
 			return new TreeNode(nums[0]);
 		}
 		else {
+			
 			int max = nums[0];
 			int location = 0;
 				for(int i=1;i<nums.length;i++) {
