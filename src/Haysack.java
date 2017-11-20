@@ -6,8 +6,16 @@ public class Haysack {
 		Haysack h = new Haysack();
 		System.out.println(h.strStr("mississippi" ,	"pi"));
 	}
-
+	
 	public int strStr(String haystack, String needle) {
+		if(needle.equals(""))
+			return 0;
+		if(haystack.equals(""))
+			return -1;
+		return haystack.indexOf(needle);
+	}
+
+	/*public int strStr(String haystack, String needle) {
 		if(needle.equals(""))
 			return 0;
 		if(haystack.equals(""))
@@ -48,6 +56,6 @@ public class Haysack {
 			
 		}
 		return result;
-	}
+	}*/
 
 }
