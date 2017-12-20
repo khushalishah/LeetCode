@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -25,7 +24,6 @@ public class LetterCombination {
 					String temp = queue.poll();
 					for(int j=0;j<letters[ch-2].length;j++) {
 						String str = temp + letters[ch-2][j];
-						//System.out.println(temp);
 						newQ.add(str);
 					}
 				}
