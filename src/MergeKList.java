@@ -80,43 +80,6 @@ public class MergeKList {
 		System.out.println();
 	}
 
-	/*public ListNode mergeKLists(ListNode[] lists) {
-		if(lists.length == 0){
-			return null;
-		}
-		ListNode result = new ListNode(0);
-		ListNode li = result;
-
-		ArrayList<ListNode> alist = new ArrayList<>(Arrays.asList(lists));
-		alist.removeAll(Collections.singleton(null));
-
-		int location = 0;
-
-
-		while(!alist.isEmpty()) {
-
-			int smallest = Integer.MAX_VALUE;
-
-			for(int i=0;i<alist.size();i++) {
-				ListNode e = alist.get(i);
-					if(e.val<smallest) {
-						smallest = e.val;
-						location = i;
-					}
-			}
-
-			ListNode small = alist.get(location);
-			li.next = small;
-			li = li.next;
-			alist.remove(small);
-			if(small.next!=null) {
-				alist.add(location, small.next);
-			}
-		}
-
-		return result.next;
-	}*/
-
 	public class ListNode {
 		int val;
 		ListNode next;
